@@ -24,7 +24,7 @@
 
 <nav class="navbar navbar-inverse" id="mainNav" data-spy="affix" data-offset-top="0">
 
-        <div class="container">
+        <div class="navContainer">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -76,13 +76,43 @@
             
 <br />
 
-<div class="row">
+<div class="row projectProfile">
     <div class="col-md-12">
         <div class="panel panel-info">
             <div class="panel-heading">
-                Project Profile
+                <ul class="breadcrumb crumbProfile">
+                    <li><a href="/about">Components</a></li>
+                    <li class="active text-uppercase">Project 4 - Profile</li>
+                </ul>
             </div>
             <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Project 4</h1>
+                        <h4></h4>
+                        <hr />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Hosting Institution</h3> 
+                        <p><strong><i></i></strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Objectives</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Outputs</h3>
+                        <p></p>
+                    </div>
+                </div>
+
                 <h1>Project 4 - Calibration and Validation of Remote Sensing Instruments for the Philippine Microsatellite Program</h1>
 <p><strong>Leader/Gender:</strong>  Dr. Enrico C. Paringit</p>
 <p><strong>Agency/Address:</strong>  Training Center for Applied Geodesy and Photogrammetry and the Department of Geodetic 
@@ -146,6 +176,7 @@ d. DPWH
 e. DOE<br>
     i.Renewable Energy Bureau                                                                                                                                         f. LGUs</p>
 
+
             </div>
         </div>
     </div>
@@ -155,15 +186,50 @@ e. DOE<br>
         </div>
     </div>
 
-    <footer class="footer">
+    <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    Contact Us | <a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/libra"> Image Browser</a> | <a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/tasking">Image Acquisition Proposals</a>
+                <h3 class="footertext">Contact Us</h3>
+                  <div class="col-md-4">
+                    <center>
+                      <h4 class="footertext">
+                        <p class="bs-component btn-group-sm">
+                            <a href="javascript:void(0)" class="btn btn-default btn-fab" id="phoneIcon"><i class="material-icons">phone</i></a>
+                        </p>
+                        </h4>
+                      <p class="footertext">XXX-XXXX loc XXXX<br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                    <h4 class="footertext">
+                        <p class="bs-component btn-group-sm">
+                            <a href="javascript:void(0)" class="btn btn-default btn-fab" id="phoneIcon"><i class="material-icons">filter-center-focus</i></a>
+                        </p>
+                        </h4>
+                      <h4 class="footertext">
+                        <strong><a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/libra">Image Browser</a></a>
+                      </h4>
+                      <p class="footertext">A Libra instance for viewing Landsat imagery</p>
+                      <br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                      <h4 class="footertext">
+                        <strong><a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/tasking">Image Acquisition Proposals</a></strong>
+                      </h4>
+                      <p class="footertext">Request for images here.<br>
+                    </center>
+                  </div>
+                </div>
+                <div class="row">
+                <p><center><a href="#">phl-microsat</a> <p class="footertext">Copyright 2016</p></center></p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>    
+
 
 
     <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>

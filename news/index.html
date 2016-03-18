@@ -22,7 +22,7 @@
 
 
 
-        <div class="container">
+        <div class="navContainer">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -130,15 +130,50 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    Contact Us | <a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/libra"> Image Browser</a> | <a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/tasking">Image Acquisition Proposals</a>
+                <h3 class="footertext">Contact Us</h3>
+                  <div class="col-md-4">
+                    <center>
+                      <h4 class="footertext">
+                        <p class="bs-component btn-group-sm">
+                            <a href="javascript:void(0)" class="btn btn-default btn-fab" id="phoneIcon"><i class="material-icons">phone</i></a>
+                        </p>
+                        </h4>
+                      <p class="footertext">XXX-XXXX loc XXXX<br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                    <h4 class="footertext">
+                        <p class="bs-component btn-group-sm">
+                            <a href="javascript:void(0)" class="btn btn-default btn-fab" id="phoneIcon"><i class="material-icons">filter-center-focus</i></a>
+                        </p>
+                        </h4>
+                      <h4 class="footertext">
+                        <strong><a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/libra">Image Browser</a></a>
+                      </h4>
+                      <p class="footertext">A Libra instance for viewing Landsat imagery</p>
+                      <br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                      <h4 class="footertext">
+                        <strong><a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/tasking">Image Acquisition Proposals</a></strong>
+                      </h4>
+                      <p class="footertext">Request for images here.<br>
+                    </center>
+                  </div>
+                </div>
+                <div class="row">
+                <p><center><a href="#">phl-microsat</a> <p class="footertext">Copyright 2016</p></center></p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>    
+
 
 
     <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>

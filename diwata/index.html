@@ -24,7 +24,7 @@
 
 <nav class="navbar navbar-inverse" id="mainNav" data-spy="affix" data-offset-top="0">
 
-        <div class="container">
+        <div class="navContainer">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -80,7 +80,7 @@
         <div class="panel panel-info">
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-justify">
                         <h1>Diwata</h1>
 <p>The baseline design of the 50 kilogram micro-satellite is assigned to Tohoku University while Hokkaido University will focus on the payload, thermal design and bus. The payload subsystem includes a high-precision telescope (HPT) with 3 meter spatial resolution and bands R\G\B\NIR. The HPT will provide surface reflectance data with its derived products that will be used mostly for damage extent determination during disasters and calamities and for natural and imaging of cultural heritage sites. The second payload is a space-borne multi-spectral imager (SMI) with liquid crystal tunable filter (LCTF), which has an 80 meter spatial resolution. The LCTF allows for image capture to be taken at 10 nanometer increments from 420nm – 650nm for the visible range, and 700nm – 1050nm for the near infrared region. Space products derived from this payload can possibly be used to determine the health and composition of the ocean, identify distribution and magnitude of harmful algal blooms, and monitor coastal ecosystems. With a spatial resolution of 7 kilometers, the wide field camera can used to complement current weather forcasting capabilities, this sensor can potentially image cloud formations and typhoons. 
 Other subsystems included are command and data handling, attitude determination and control, telemetry tracking and command, and power supply system.</p>
@@ -128,15 +128,25 @@ Other subsystems included are command and data handling, attitude determination 
 </ul>
 
                     </div>
-                    <div class="col-md-5">
-                        <img class="img-responsive" src="/static/images/diwata-design.png" alt="Diwata"><br />
-                        <img class="img-responsive" src="/static/images/diwata-design2.png" alt="Diwata"><br />
-                        <img class="img-responsive" src="/static/images/diwata-design3.png" alt="Diwata"><br />
+                    <div class="col-md-5 diwataImg">
+                    <div class="diwataImgDiv">
+                        <img class="img-responsive" src="/static/images/diwata-design.png" alt="Diwata">
+                        <small><i>Diwata Image Caption 1</i></small>
+                    </div>
+                    <div class="diwataImgDiv">    
+                        <img class="img-responsive" src="/static/images/diwata-design2.png" alt="Diwata">
+                        <small><i>Diwata Image Caption 2</i></small>
+                    </div>
+                    <div class="diwataImgDiv">
+                        <img class="img-responsive" src="/static/images/diwata-design3.png" alt="Diwata">
+                        <small><i>Diwata Image Caption 3</i></small>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--
+
+<div class="panel panel-info">
         <div class="panel panel-info">
             <div class="panel-body">
                 <div class="row">
@@ -146,22 +156,57 @@ Other subsystems included are command and data handling, attitude determination 
                 </div>
             </div>
         </div>
-        -->
+        </div>
     </div>
 </div>
 
         </div>
     </div>
 
-    <footer class="footer">
+    <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    Contact Us | <a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/libra"> Image Browser</a> | <a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/tasking">Image Acquisition Proposals</a>
+                <h3 class="footertext">Contact Us</h3>
+                  <div class="col-md-4">
+                    <center>
+                      <h4 class="footertext">
+                        <p class="bs-component btn-group-sm">
+                            <a href="javascript:void(0)" class="btn btn-default btn-fab" id="phoneIcon"><i class="material-icons">phone</i></a>
+                        </p>
+                        </h4>
+                      <p class="footertext">XXX-XXXX loc XXXX<br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                    <h4 class="footertext">
+                        <p class="bs-component btn-group-sm">
+                            <a href="javascript:void(0)" class="btn btn-default btn-fab" id="phoneIcon"><i class="material-icons">filter-center-focus</i></a>
+                        </p>
+                        </h4>
+                      <h4 class="footertext">
+                        <strong><a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/libra">Image Browser</a></a>
+                      </h4>
+                      <p class="footertext">A Libra instance for viewing Landsat imagery</p>
+                      <br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                      <h4 class="footertext">
+                        <strong><a target="_blank" class='footer-link' href="http://phl-microsat.cloudapp.net/tasking">Image Acquisition Proposals</a></strong>
+                      </h4>
+                      <p class="footertext">Request for images here.<br>
+                    </center>
+                  </div>
+                </div>
+                <div class="row">
+                <p><center><a href="#">phl-microsat</a> <p class="footertext">Copyright 2016</p></center></p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>    
+
 
 
     <script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
